@@ -7,7 +7,7 @@ description: Make a series of narrated-by-callout training videos for any web sy
 
 Records real use of a web system and turns it into finished training videos: one short video per chapter, and one full video with chapter markers. There is no voice. Short callouts explain what is happening and why.
 
-The method is fixed because it was worked out over a full 16-minute series, and each part solves a problem that really happened. Only the look changes from one system to the next.
+The method is fixed because each part solves a real recording problem. Only the look changes from one system to the next.
 
 | Stays the same in every system | Comes from the system itself |
 |---|---|
@@ -40,7 +40,7 @@ Look in the project first: README, `package.json`, docs, seed data, test account
 
 ## Step 2: Learn the system, and plan the chapters
 
-Read its routes, menu and any user documentation, and open the pages in the running system. Then write a chapter plan: one chapter for each area a person really works in, each built around jobs ("add a member and decide what they can see"), not a tour of the screens. A chapter usually has 2 to 6 steps and runs 1 to 4 minutes. Start with a "Getting started" chapter. List what you plan to leave out, with the reason.
+Read its routes, menu and any user documentation, and open the pages in the running system. Then write a chapter plan: one chapter for each area a person really works in, each built around jobs ("create an order and send it for approval"), not a tour of the screens. A chapter usually has 2 to 6 steps and runs 1 to 4 minutes. Start with a "Getting started" chapter. List what you plan to leave out, with the reason.
 
 ## Step 3: Set up, and read the system's look
 

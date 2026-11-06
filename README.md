@@ -11,6 +11,7 @@
 ![Playwright](https://img.shields.io/badge/Playwright-browser_recording-2EAD33)
 ![ffmpeg](https://img.shields.io/badge/ffmpeg-editing_and_sound-007808?logo=ffmpeg&logoColor=white)
 ![Output](https://img.shields.io/badge/output-1080p_MP4-1F6FEB)
+![MIT license](https://img.shields.io/badge/license-MIT-blue)
 
 Say *"make training videos for this system"*. Claude learns the system, plans the chapters, reads its colours, fonts and logo, records real use in a browser, edits the footage, adds sound effects and checks the result.
 
@@ -38,6 +39,7 @@ You get one short video per chapter, plus one full video with chapter markers.
 - [Safety rules](#safety-rules)
 - [What has been tested](#what-has-been-tested)
 - [What is in this repository](#what-is-in-this-repository)
+- [License](#license)
 
 ## Why use it
 
@@ -52,7 +54,7 @@ Training videos usually cost days of recording, and they go out of date with the
 | Recording leaves test data behind | Test data is reset before every recording |
 | Mistakes are found after publishing | Each chapter gets automatic checks and a contact sheet |
 
-The method comes from a real series of 11 chapters and 16 minutes. This skill is the general version of that work, and each rule in it answers a problem that really happened.
+Each rule in the skill answers a real recording problem.
 
 ## One layout, each system's own look
 
@@ -253,13 +255,12 @@ Tested on Windows 11. The demo systems are fictional and were made only for test
 |---|---|
 | Light system: full page reloads, `oklch` colours, web font, logo | Passed: look, two chapters, full video with chapter markers |
 | Dark system: Arabic callouts, pill buttons | Passed: look and one chapter |
-| Reading the look of a large real Next.js system, with no custom code | Passed |
 | A chapter with a loading screen left in on purpose | Caught by `check` |
 | A non-local address | Refused |
 
 Not proven yet:
 
-- **Recording a single-page app.** A system that changes pages without reloading has not been fully recorded with this general version. The recording of the real Next.js system above did not finish.
+- **Recording a single-page app.** A system that changes pages without reloading has not been fully recorded with this general version.
 - **Some chapter actions** have not been run in this version: `switchUser`, `choose`, `upload`, `navAction`, `saved`, `fill`, and `loaded` with `sameUrl`.
 - **macOS and Linux.**
 - **Sound by ear.** Levels are measured, not listened to. Listen to one chapter before you share a series.
@@ -277,3 +278,7 @@ system-training-videos/
 ├── template/        starting files for a new project
 └── docs/media/      the pictures and samples on this page
 ```
+
+## License
+
+Released under the [MIT License](LICENSE).

@@ -2,7 +2,7 @@
 // Made here, so no real person's photo or document ever appears.
 //   const { photo, pdf } = await assets();
 //   await d.upload(button, photo);
-//   await d.upload(button, pdf("Delivery plan (sample)", ["A fictional file. No real data."]));
+//   await d.upload(button, pdf("Sample plan", ["A fictional file. No real data."]));
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";

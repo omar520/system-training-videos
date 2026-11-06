@@ -108,7 +108,7 @@ await d.unfocus();
 
 ## Finding elements
 
-Prefer what the viewer reads: `getByRole("button", { name: "Save" })`, `getByLabel("Email")`. Add `exact: true` when one name contains another ("Board" also matches "Portfolio Board"). A table row: `page.getByRole("row").filter({ hasText: "Sample name" })`.
+Prefer what the viewer reads: `getByRole("button", { name: "Save" })`, `getByLabel("Email")`. Add `exact: true` when one name contains another ("Report" also matches "Monthly Report"). A table row: `page.getByRole("row").filter({ hasText: "Sample name" })`.
 
 Elements are checked when used, so when a script fails, `error.png` in the chapter's `_work` folder shows the screen at that moment.
 

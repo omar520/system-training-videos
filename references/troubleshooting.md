@@ -10,7 +10,7 @@ A failed run saves `error.png` in the chapter's `_work/chapters/<name>/` folder.
 | Timeout on a locator after a save | The page refreshed. Add `await d.saved("Text")` or `await d.settle()` before the next action |
 | A change disappears after saving | A refresh after the save overwrote it. Wait with `d.settle()` before changing anything else |
 | Timeout on a toast text | The real wording differs. Wait for the changed row or value on the page instead |
-| A name matches something else ("Board" and "Portfolio Board") | Use `exact: true`, or match by role inside a smaller area |
+| A name matches something else ("Report" and "Monthly Report") | Use `exact: true`, or match by role inside a smaller area |
 | Sign-in fails during `brand` | Fix `signIn` in the config. Check the labels in the running system |
 | `Sync marker not found` | The first 60 s of the video had no magenta frame: `d.start()` must run early, before any long work |
 | `The chapter's run() must end with d.end()` | Add it |
